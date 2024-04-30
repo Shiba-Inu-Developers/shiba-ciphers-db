@@ -4,6 +4,7 @@
       "Type" varchar(20),
       "Title" text,
       "Content" text,
+      "Hash" text,
       "Source" text,
       "Extension" varchar(10),
       "Segmented" text,
