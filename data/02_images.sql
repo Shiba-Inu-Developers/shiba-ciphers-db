@@ -7,6 +7,7 @@
       "Hash" text,
       "Source" text,
       "Extension" varchar(10),
+      "Areas" text,
       "Segmented" text,
       "Encrypted" text,
       "Decrypted" varchar(20),
