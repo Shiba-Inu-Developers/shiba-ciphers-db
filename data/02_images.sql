@@ -1,16 +1,12 @@
-﻿CREATE TABLE
-    "MyImages" (
-      "Id" bigserial PRIMARY KEY NOT NULL,
-      "Type" varchar(20),
-      "Title" text,
-      "Description" text,
-      "Content" text,
-      "Hash" text,
-      "Source" text,
-      "Extension" varchar(10),
-      "Areas" text,
-      "Encrypted" text,
-      "Decrypted" varchar(20),
-      "CreationDate" timestamp DEFAULT CURRENT_TIMESTAMP,
-      "UserId" bigint REFERENCES "MyUsers"("Id")
+﻿CREATE TABLE images (
+  id bigserial primary key not null,
+  type text,
+  title text,
+  description text,
+  hash text,
+  ext text,
+  content text,
+  decrypted_content text,
+  creation_date timestamp default current_timestamp,
+  user_id bigserial references users(id)
 );

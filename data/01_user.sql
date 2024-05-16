@@ -1,12 +1,11 @@
-CREATE TABLE
-  "MyUsers" (
-    "Id" bigserial PRIMARY KEY NOT NULL,
-    "Email" text NOT NULL UNIQUE,
-    "FirstName" text,
-    "LastName" text,
-    "Password" text NOT NULL,
-    "Otp" text NOT NULL,
-    "IsVerified" boolean NOT NULL,
-    "RefreshToken" text,
-    "RefreshTokenExpiryTime" date
-  );
+CREATE TABLE users (
+  id bigserial primary key not null,
+  email text not null unique,
+  first_name text,
+  last_name text,
+  password text not null,
+  otp text not null,
+  verified boolean not null,
+  refresh_token text,
+  refresh_token_expiration date
+);
