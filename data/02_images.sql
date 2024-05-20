@@ -3,6 +3,7 @@
   type text,
   title text,
   description text,
+  public boolean default false,
   hash text,
   ext text,
   content text,
